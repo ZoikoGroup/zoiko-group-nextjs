@@ -2,7 +2,10 @@
 
 import { useActionState } from "react";
 
-import { initialConsultationState, requestConsultation } from "./actions";
+import {
+  initialConsultationState,
+  requestConsultation,
+} from "./consultation-actions";
 
 const helpOptions = [
   "General Enquiry",

@@ -1,0 +1,32 @@
+import type { Metadata } from "next";
+
+import BrandStrip from "./components/BrandStrip";
+import ContactSection from "./components/ContactSection";
+
+import CareersBanner from "./components/CareersBanner";
+import CareersHero from "./components/CareersHero";
+import DeiCommitments from "./components/DeiCommitments";
+import OpenPositions from "./components/OpenPositions";
+import PurposeJourney from "./components/PurposeJourney";
+import WhyWorkWithUs from "./components/WhyWorkWithUs";
+
+export const metadata: Metadata = {
+  title: "Careers — Zoiko Group",
+  description:
+    "Engineer the future, empower the world and grow with Zoiko Group — open positions, our DEI commitments and what it means to build a career across our global portfolio.",
+};
+
+export default function CareersPage() {
+  return (
+    <>
+      <CareersBanner />
+      <CareersHero />
+      <WhyWorkWithUs />
+      <PurposeJourney />
+      <OpenPositions />
+      <DeiCommitments />
+      <BrandStrip />
+      <ContactSection />
+    </>
+  );
+}
