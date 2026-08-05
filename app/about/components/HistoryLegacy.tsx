@@ -32,9 +32,9 @@ export default function HistoryLegacy() {
             Founded by Lennox McLeod, Zoiko Group has evolved from
             entrepreneurial roots into an innovation-led, platform-based global
             enterprise with corporate governance and responsible leadership at
-            its core. Zoiko Group remains committed to multi-generational enterprise leadership —
-            with governance excellence and responsible innovation at the heart
-            of its vision for sustainable global impact.
+            its core. Zoiko Group remains committed to multi-generational
+            enterprise leadership — with governance excellence and responsible
+            innovation at the heart of its vision for sustainable global impact.
           </p>
 
           <div className="mt-10 grid items-center gap-8 lg:grid-cols-[1fr_auto]">

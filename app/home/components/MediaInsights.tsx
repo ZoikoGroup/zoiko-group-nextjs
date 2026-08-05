@@ -7,19 +7,16 @@ import socialFeedIcon from "@/public/home/Social-Feed.png";
 import insightsIcon from "@/public/home/Zoiko-Insights.png";
 import mediaImage from "@/public/home/media-insights.png";
 
+/* Listed but not linked — these channels have no page yet. Give each one an
+   href once its page exists. */
 const channels: {
   label: string;
-  href: string;
   icon: StaticImageData;
 }[] = [
-  { label: "Press Centre", href: "/media/press", icon: pressIcon },
-  { label: "Zoiko Insights", href: "/media/insights", icon: insightsIcon },
-  {
-    label: "Executive Interviews",
-    href: "/media/interviews",
-    icon: interviewsIcon,
-  },
-  { label: "Social Feed", href: "/media/social", icon: socialFeedIcon },
+  { label: "Press Centre", icon: pressIcon },
+  { label: "Zoiko Insights", icon: insightsIcon },
+  { label: "Executive Interviews", icon: interviewsIcon },
+  { label: "Social Feed", icon: socialFeedIcon },
 ];
 
 export default function MediaInsights() {
@@ -32,28 +29,24 @@ export default function MediaInsights() {
           </h2>
 
           <ul className="mt-8 space-y-4">
-            {channels.map(({ label, href, icon }) => (
-              <li key={label}>
-                <Link
-                  href={href}
-                  className="group flex items-center gap-4 rounded-xl bg-white px-5 py-4 shadow-card"
-                >
-                  <Image
-                    src={icon}
-                    alt=""
-                    aria-hidden="true"
-                    className="h-5 w-5 shrink-0 object-contain"
-                  />
-                  <span className="text-base text-brand-muted transition-colors group-hover:text-brand-teal">
-                    {label}
-                  </span>
-                </Link>
+            {channels.map(({ label, icon }) => (
+              <li
+                key={label}
+                className="flex items-center gap-4 rounded-xl bg-white px-5 py-4 shadow-card"
+              >
+                <Image
+                  src={icon}
+                  alt=""
+                  aria-hidden="true"
+                  className="h-5 w-5 shrink-0 object-contain"
+                />
+                <span className="text-base text-brand-muted">{label}</span>
               </li>
             ))}
           </ul>
 
           <Link
-            href="/media"
+            href="/press"
             className="mt-10 inline-block rounded-full border border-brand-navy px-8 py-3 text-base font-semibold text-brand-navy transition-colors hover:bg-brand-navy hover:text-white"
           >
             Stay Informed

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import ConsultationForm from "@/components/consultation/ConsultationForm";
+import ConsultationForm from "./ConsultationForm";
 import mailIcon from "@/public/contact-us/mail.png";
 import openMapIcon from "@/public/contact-us/open-map.png";
 import phoneIcon from "@/public/contact-us/phone.png";

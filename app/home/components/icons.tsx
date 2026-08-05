@@ -46,4 +46,3 @@ export function ArrowRightIcon({ className }: IconProps) {
     </svg>
   );
 }
-

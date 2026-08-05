@@ -117,7 +117,9 @@ const placementClasses: Record<Location["placement"], string> = {
 type Product = {
   name: string;
   tagline: string;
-  href: string;
+  /** Each brand's own site. Omitted where no site exists yet — that card
+      renders as plain text rather than a link. */
+  href?: string;
   icon: StaticImageData;
 };
 
@@ -126,61 +128,60 @@ const products: Product[] = [
   {
     name: "ZoikoTime",
     tagline: "Smarter Workdays",
-    href: "/divisions/zoiko-time",
+    href: "https://zoikotime.com/",
     icon: zoikoTimeIcon,
   },
   {
     name: "ZoikoSuite",
     tagline: "Cross-border Accounting",
-    href: "/divisions/zoiko-suite",
+    href: "https://zoikosuite.com/",
     icon: zoikoSuiteIcon,
   },
   {
     name: "ZoikoNex",
     tagline: "Intelligent Billing",
-    href: "/divisions/zoiko-nex",
+    href: "https://www.zoikonex.com/",
     icon: zoikoNexIcon,
   },
   {
     name: "ZoikoAssure",
     tagline: "Enterprise Compliance",
-    href: "/divisions/zoiko-assure",
+    href: "https://zoikoassure.com/",
     icon: zoikoAssureIcon,
   },
   {
     name: "ZoikoShield",
     tagline: "Cyber Prediction",
-    href: "/divisions/zoiko-shield",
+    href: "https://zoikoshield.com/",
     icon: zoikoShieldIcon,
   },
   {
     name: "BookingOrbit",
     tagline: "Booking, Reimagined",
-    href: "/divisions/booking-orbit",
     icon: bookingOrbitIcon,
   },
   {
     name: "ZoikoPal",
     tagline: "Care That Remembers",
-    href: "/divisions/zoiko-pal",
+    href: "https://zoikopal.com/",
     icon: zoikoPalIcon,
   },
   {
     name: "DriverXtra",
     tagline: "Everything for the Road",
-    href: "/divisions/driver-xtra",
+    href: "https://driverxtra.com/",
     icon: driverXtraIcon,
   },
   {
     name: "ZoikoSocial",
     tagline: "Where Animal Lovers Belong",
-    href: "/divisions/zoiko-social",
+    href: "https://zoikosocial.com/",
     icon: zoikoSocialIcon,
   },
   {
     name: "Zoiko Pay",
     tagline: "Powering Intelligent Global Commerce",
-    href: "/divisions/zoiko-pay",
+    href: "https://zoikopay.com/",
     icon: zoikoPayIcon,
   },
 ];
@@ -188,7 +189,12 @@ const products: Product[] = [
 function LocationChip({ location }: { location: Location }) {
   return (
     <span className="flex items-center gap-2 rounded-lg bg-white px-3 py-1.5 text-xs font-medium text-brand-navy shadow-md">
-      <Image src={location.flag} alt="" aria-hidden="true" className="h-4 w-4" />
+      <Image
+        src={location.flag}
+        alt=""
+        aria-hidden="true"
+        className="h-4 w-4"
+      />
       {location.label}
     </span>
   );
@@ -251,20 +257,17 @@ export default function GlobalReach() {
           At Zoiko Group, our roots are firmly planted in regional insight—our
           teams understand local markets, laws, and cultures. But our reach is
           global, with operations and impact spanning North America, the UK, and
-          Asia. This dual perspective enables us to deliver regionally compliant,
-          globally scalable solutions. Whether you&apos;re expanding,
+          Asia. This dual perspective enables us to deliver regionally
+          compliant, globally scalable solutions. Whether you&apos;re expanding,
           transforming, or adapting—we bring a worldview to your doorstep.
         </p>
 
         {/* Capped at the Figma width — at the full container the cards stretch
             far past their text and read as empty bars. */}
         <ul className="mx-auto mt-10 grid max-w-3xl gap-x-8 gap-y-5 sm:grid-cols-2">
-          {products.map((product) => (
-            <li key={product.name}>
-              <Link
-                href={product.href}
-                className="flex h-full items-center gap-3 rounded-lg border border-gray-200 bg-white px-4 py-3 transition-colors hover:border-brand-teal"
-              >
+          {products.map((product) => {
+            const card = (
+              <>
                 <Image
                   src={product.icon}
                   alt=""
@@ -277,9 +280,28 @@ export default function GlobalReach() {
                   </span>{" "}
                   – {product.tagline}
                 </span>
-              </Link>
-            </li>
-          ))}
+              </>
+            );
+            const cardClass =
+              "flex h-full items-center gap-3 rounded-lg border border-gray-200 bg-white px-4 py-3";
+
+            return (
+              <li key={product.name}>
+                {product.href ? (
+                  <a
+                    href={product.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${cardClass} transition-colors hover:border-brand-teal`}
+                  >
+                    {card}
+                  </a>
+                ) : (
+                  <div className={cardClass}>{card}</div>
+                )}
+              </li>
+            );
+          })}
         </ul>
 
         <div className="mt-10 flex justify-center">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { footerColumns, socialLinks } from "./footer-links";
@@ -35,7 +36,8 @@ export default function Footer() {
             <h2 className="text-[15px] font-bold text-brand-teal">
               Connect on Social media
             </h2>
-            <ul className="mt-5 flex flex-wrap items-center gap-3">
+            {/* Four per row — the rest wrap onto the next line. */}
+            <ul className="mt-5 grid w-max grid-cols-4 gap-3">
               {socialLinks.map((social) => (
                 <li key={social.label}>
                   <a
@@ -43,17 +45,14 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-surface text-brand-navy transition-colors hover:bg-brand-navy hover:text-white"
+                    className="flex size-9 items-center justify-center rounded-full bg-brand-navy transition-opacity hover:opacity-80"
                   >
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
+                    <Image
+                      src={social.icon}
+                      alt=""
                       aria-hidden="true"
-                    >
-                      <path d={social.path} />
-                    </svg>
+                      className="size-9"
+                    />
                   </a>
                 </li>
               ))}
@@ -69,8 +68,8 @@ export default function Footer() {
             Street, Sacramento, California 95811
           </p>
           <p className="text-[17px] text-gray-400">
-            Designed &amp; powered by Zoiko Web - AI-driven web solutions trusted
-            worldwide. Services
+            Designed &amp; powered by Zoiko Web - AI-driven web solutions
+            trusted worldwide. Services
           </p>
         </div>
       </div>
