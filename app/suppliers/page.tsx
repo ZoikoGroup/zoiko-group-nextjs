@@ -8,9 +8,9 @@ import SuppliersIntro from "./components/SuppliersIntro";
 import WhatWeLookFor from "./components/WhatWeLookFor";
 
 export const metadata: Metadata = {
-  title: "Supplier Collaboration & Partnerships — Zoiko Group",
+  title: "Zoiko Group Supplier Collaboration & Partnerships",
   description:
-    "Partner with Zoiko Group — what we look for in suppliers, the categories we invite interest in, our supplier diversity commitment, and how to submit an inquiry.",
+    "Partner with Zoiko Group to explore supplier collaboration, drive innovation, and achieve long-term growth through strategic and reliable partnerships.",
 };
 
 export default function SuppliersPage() {

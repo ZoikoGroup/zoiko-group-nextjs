@@ -4,9 +4,9 @@ import ContactBanner from "./components/ContactBanner";
 import ContactDetails from "./components/ContactDetails";
 
 export const metadata: Metadata = {
-  title: "Contact Zoiko Group — Engage With Our Global Advisory Team",
+  title: "Contact Us Zoiko Group | Support and Inquiries",
   description:
-    "For enterprise inquiries, partnership discussions or platform support, Zoiko Group's advisory and technical teams respond within 1 business day.",
+    "Reach Zoiko Group for customer support, partnerships, demos, and inquiries. Contact us via phone, email, or our online form for a fast response.",
 };
 
 export default function ContactUsPage() {

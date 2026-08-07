@@ -5,9 +5,9 @@ import PortfolioContact from "./components/PortfolioContact";
 import PortfolioIntro from "./components/PortfolioIntro";
 
 export const metadata: Metadata = {
-  title: "Portfolio — A World-Class Portfolio Engineering Innovation & Growth",
+  title: "Portfolio – Zoiko Group | Discover Our Core Ventures",
   description:
-    "Zoiko Group operates a world-class portfolio of businesses and platforms across technology, connectivity, financial services, media and consumer brands.",
+    "Zoiko Group’s portfolio features innovative global ventures in AI, fintech, telecom, and consumer brands built for scalable impact and sustainable growth.",
 };
 
 export default function PortfolioPage() {

@@ -10,9 +10,9 @@ import SustainabilityBanner from "./components/SustainabilityBanner";
 import SustainabilityIntro from "./components/SustainabilityIntro";
 
 export const metadata: Metadata = {
-  title: "Corporate Responsibility & Sustainability — Zoiko Group",
+  title: "Corporate Responsibility & Sustainability | Zoiko Group",
   description:
-    "Zoiko Group's CR&S strategy — environmental stewardship, inclusive social progress, ethical innovation, and governance and transparency across every Group company.",
+    "Zoiko Group advances sustainability, ethical AI, and strong governance—driving responsible innovation with long-term social and environmental impact.",
 };
 
 export default function SustainabilityPage() {

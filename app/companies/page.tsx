@@ -6,9 +6,9 @@ import CompaniesIntro from "./components/CompaniesIntro";
 import CompanyGroups from "./components/CompanyGroups";
 
 export const metadata: Metadata = {
-  title: "Our Companies & Brands — Zoiko Group",
+  title: "Meet Our Companies & Brands | Zoiko Group",
   description:
-    "A portfolio of industry-defining companies and purpose-driven brands across AI platforms, telecommunications, media, consumer products, financial services and community-first mobile networks.",
+    "Discover Zoiko Group’s diverse companies and brands. Explore our portfolio of businesses delivering innovative solutions across industries and markets.",
 };
 
 export default function CompaniesPage() {

@@ -11,9 +11,9 @@ import PurposeJourney from "./components/PurposeJourney";
 import WhyWorkWithUs from "./components/WhyWorkWithUs";
 
 export const metadata: Metadata = {
-  title: "Careers — Zoiko Group",
+  title: "Careers at Zoiko Group | Build Your Future with Us",
   description:
-    "Engineer the future, empower the world and grow with Zoiko Group — open positions, our DEI commitments and what it means to build a career across our global portfolio.",
+    "Build your career at Zoiko Group, where innovation meets purpose. Join a diverse team working across AI, telecommunications, media, and financial services.",
 };
 
 export default function CareersPage() {

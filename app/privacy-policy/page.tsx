@@ -4,9 +4,9 @@ import PrivacyDocument from "./components/PrivacyDocument";
 import PrivacyPolicyBanner from "./components/PrivacyPolicyBanner";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Zoiko Group",
+  title: "Privacy Policy & Data Protection | Zoiko Group",
   description:
-    "How Zoiko Group collects, uses, shares and safeguards personal information across its companies, brands, services and digital platforms.",
+    "Learn how Zoiko Group protects your personal data through our transparent privacy policy, ensuring confidentiality, compliance, and responsible use.",
 };
 
 export default function PrivacyPolicyPage() {

@@ -7,9 +7,9 @@ import PresenceEnables from "./components/PresenceEnables";
 import WhereWeOperate from "./components/WhereWeOperate";
 
 export const metadata: Metadata = {
-  title: "Our Global Reach — Zoiko Group",
+  title: "Global Reach – Zoiko Group | Connecting Worldwide",
   description:
-    "Zoiko Group builds businesses, platforms and brands serving diverse markets, cultures and communities across North America, Europe, Asia and Africa.",
+    "From Africa to Asia, Zoiko Group’s global presence fosters inclusive growth, industry innovation, and ethical leadership across international markets.",
 };
 
 export default function GlobalReachPage() {
