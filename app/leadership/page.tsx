@@ -10,9 +10,9 @@ import LeadershipIntro from "./components/LeadershipIntro";
 import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 
 export const metadata: Metadata = {
-  title: "Leadership & Governance — Zoiko Group",
+  title: "Leadership & Governance | Zoiko Group",
   description:
-    "Visionary leadership, world-class governance and sustainable enterprise — the executive team, Board of Directors, governance framework and ethics standards behind Zoiko Group.",
+    "Discover Zoiko Group’s leadership team and governance framework guiding ethical practices, transparency, and strategic growth across global operations.",
 };
 
 export default function LeadershipPage() {

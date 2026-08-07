@@ -11,9 +11,9 @@ import VisionHeader from "./components/VisionHeader";
 import WhoWeServe from "./components/WhoWeServe";
 
 export const metadata: Metadata = {
-  title: "About Zoiko Group — The Zoiko Vision",
+  title: "About Us Zoiko Group | Vision & Mission for Global Impact",
   description:
-    "A diversified global enterprise driving AI-powered innovation across SaaS, telecommunications, financial services, mobility, OTT media and consumer markets.",
+    "Discover Zoiko Group’s vision for global impact and our mission to lead with innovation, sustainability, and responsible growth across industries worldwide.",
 };
 
 export default function AboutPage() {

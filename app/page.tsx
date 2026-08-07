@@ -10,9 +10,9 @@ import Solutions from "./home/components/Solutions";
 import Testimonials from "./home/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Zoiko Group — Redefining Enterprise, Empowering Society",
+  title: "Zoiko Group | Global AI, Telecom, Fintech & Healthcare",
   description:
-    "Global innovation rooted in integrity, built to transform industries and uplift communities at scale.",
+    "Zoiko Group builds intelligent platforms in AI, telecom, fintech, healthcare, MedTech, food, media, and tech—driving ESG-led transformation globally.",
 };
 
 export default function HomePage() {

@@ -4,9 +4,9 @@ import CorporateGovernanceBanner from "./components/CorporateGovernanceBanner";
 import GovernanceDocument from "./components/GovernanceDocument";
 
 export const metadata: Metadata = {
-  title: "Corporate Governance — Zoiko Group",
+  title: "Corporate Governance & Leadership | Zoiko Group",
   description:
-    "Integrity, accountability, leadership and long-term value — Zoiko Group's governance philosophy, Board structure, ethics and compliance programme, and AI governance.",
+    "Zoiko Group upholds strong corporate governance with ethical leadership, board oversight, transparency, and responsible practices, driving long-term success.",
 };
 
 export default function CorporateGovernancePage() {

@@ -8,9 +8,9 @@ import StructuredToLead from "./components/StructuredToLead";
 import { divisions } from "./components/divisions-data";
 
 export const metadata: Metadata = {
-  title: "Divisions — Powering Progress Through Purpose-Built Divisions",
+  title: "Zoiko Group Divisions | Powering Progress with Purpose",
   description:
-    "Zoiko Group is organized into a portfolio of strategic divisions, each purpose-built to deliver leadership across technology, telecommunications, financial services, media and consumer brands.",
+    "Zoiko Group’s purpose-built divisions lead their fields with innovation, impact, and a commitment to global excellence, driving progress worldwide.",
 };
 
 export default function DivisionsPage() {

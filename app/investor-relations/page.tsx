@@ -9,9 +9,9 @@ import JoinUs from "./components/JoinUs";
 import WhyInvest from "./components/WhyInvest";
 
 export const metadata: Metadata = {
-  title: "Investor Relations — Zoiko Group",
+  title: "Investor Relations & Financial Reporting | Zoiko Group",
   description:
-    "Building enduring value and creating shared prosperity — Zoiko Group's investment case, capital structure, financial reporting standards and investor contact details.",
+    "Zoiko Group Investor Relations offers insights on corporate governance, financial transparency, & strategic growth across technology, AI, and global markets.",
 };
 
 export default function InvestorRelationsPage() {

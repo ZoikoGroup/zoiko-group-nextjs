@@ -4,9 +4,9 @@ import ResponsibleAiBanner from "./components/ResponsibleAiBanner";
 import ResponsibleAiDocument from "./components/ResponsibleAiDocument";
 
 export const metadata: Metadata = {
-  title: "Responsible AI Use — Zoiko Group",
+  title: "Responsible AI Use for Business Growth | Zoiko Group",
   description:
-    "How Zoiko Group builds and deploys AI — our Responsible AI principles, governance and oversight, algorithmic impact assessments, and vendor requirements.",
+    "Learn how Zoiko Group integrates responsible AI into business growth, promoting ethics, fairness, transparency, and long-term trust.",
 };
 
 export default function ResponsibleAiPage() {

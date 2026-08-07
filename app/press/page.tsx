@@ -8,9 +8,9 @@ import PressBanner from "./components/PressBanner";
 import PressIntro from "./components/PressIntro";
 
 export const metadata: Metadata = {
-  title: "Press & Media Requests — Zoiko Group",
+  title: "Zoiko Group Press & Media Requests - Reach Our Team",
   description:
-    "Media enquiries, interview and speaking requests, and press resources for Zoiko Group — how to reach our Global Media Relations Office.",
+    "Submit your press and media inquiries to Zoiko Group. Our team is available for interviews, features, and official company information upon request.",
 };
 
 export default function PressPage() {
