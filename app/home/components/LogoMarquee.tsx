@@ -18,32 +18,33 @@ const brands: { name: string; logo: StaticImageData }[] = [
   { name: "Zoiko Engineering", logo: zoikoEngineering },
 ];
 
-export default function BrandStrip() {
+/**
+ * Renders as a plain, transparent marquee — no section wrapper or background
+ * of its own. It's meant to sit absolutely inside Hero, directly over the
+ * cream band already baked into the bottom of hero-bg.webp, so there's no
+ * seam between the two.
+ */
+export default function LogoMarquee() {
   return (
-    <section
+    <ul
       aria-label="Zoiko Group brands"
-      className="overflow-hidden bg-white py-10"
+      className="flex w-max animate-marquee items-center hover:[animation-play-state:paused]"
     >
-      {/* Two identical runs of the logos. Spacing comes from per-item padding
-          rather than a flex gap, so translating by exactly -50% lands the
-          second run where the first began and the loop is seamless. */}
-      <ul className="flex w-max animate-marquee items-center hover:[animation-play-state:paused]">
-        {[0, 1].map((run) =>
-          brands.map((brand) => (
-            <li
-              key={`${run}-${brand.name}`}
-              className="shrink-0 px-8 sm:px-12"
-              aria-hidden={run === 1}
-            >
-              <Image
-                src={brand.logo}
-                alt={brand.name}
-                className="h-9 w-auto sm:h-10"
-              />
-            </li>
-          )),
-        )}
-      </ul>
-    </section>
+      {[0, 1].map((run) =>
+        brands.map((brand) => (
+          <li
+            key={`${run}-${brand.name}`}
+            className="shrink-0 px-6 sm:px-10"
+            aria-hidden={run === 1}
+          >
+            <Image
+              src={brand.logo}
+              alt={brand.name}
+              className="h-7 w-auto sm:h-8"
+            />
+          </li>
+        )),
+      )}
+    </ul>
   );
 }

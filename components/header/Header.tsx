@@ -7,6 +7,7 @@ import { useState } from "react";
 
 import zoikoGroupLogo from "@/public/zoiko-group-logo.png";
 import { contactItem, navItems } from "./nav-items";
+import SearchOverlay from "./SearchOverlay";
 
 function isActive(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -18,20 +19,20 @@ export default function Header() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white">
-      <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-6 sm:px-8 lg:h-32">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-[0_1px_2px_rgba(16,55,92,0.06)]">
+      <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-6 sm:px-8 lg:h-20">
         <Link href="/" className="shrink-0" aria-label="Zoiko Group — home">
           <Image
             src={zoikoGroupLogo}
             alt="Zoiko Group"
             priority
-            className="h-10 w-auto lg:h-16"
+            className="h-8 w-auto lg:h-10"
           />
         </Link>
 
         <nav
           aria-label="Primary"
-          className="hidden items-center gap-8 lg:flex xl:gap-10"
+          className="hidden flex-1 items-center justify-center gap-7 lg:flex xl:gap-9"
         >
           {navItems.map((item) => {
             const active = isActive(pathname, item.href);
@@ -40,7 +41,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 aria-current={active ? "page" : undefined}
-                className={`text-[17px] transition-colors hover:text-brand-teal ${
+                className={`text-[15px] transition-colors hover:text-brand-teal ${
                   active
                     ? "font-semibold text-brand-teal"
                     : "font-medium text-brand-ink"
@@ -50,14 +51,39 @@ export default function Header() {
               </Link>
             );
           })}
+        </nav>
+
+        <div className="hidden shrink-0 items-center gap-4 lg:flex">
+          <SearchOverlay />
+
+          <button
+            type="button"
+            aria-label="Region and language"
+            className="text-brand-ink transition-colors hover:text-brand-teal"
+          >
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18M12 3c2.4 2.5 3.6 5.5 3.6 9s-1.2 6.5-3.6 9c-2.4-2.5-3.6-5.5-3.6-9s1.2-6.5 3.6-9Z" />
+            </svg>
+          </button>
 
           <Link
             href={contactItem.href}
-            className="rounded-full border-2 border-brand-navy px-8 py-2.5 text-[17px] font-semibold text-brand-navy transition-colors hover:bg-brand-navy hover:text-white"
+            className="rounded-full bg-brand-navy px-7 py-2.5 text-[15px] font-semibold text-white transition-colors hover:bg-brand-deep"
           >
             {contactItem.label}
           </Link>
-        </nav>
+        </div>
 
         <button
           type="button"
@@ -116,7 +142,7 @@ export default function Header() {
               <Link
                 href={contactItem.href}
                 onClick={closeMenu}
-                className="inline-block rounded-full border-2 border-brand-navy px-8 py-2.5 text-[17px] font-semibold text-brand-navy"
+                className="inline-block rounded-full bg-brand-navy px-8 py-2.5 text-[17px] font-semibold text-white"
               >
                 {contactItem.label}
               </Link>
@@ -124,6 +150,12 @@ export default function Header() {
           </ul>
         </nav>
       )}
+
+      {/* Accent bar under the whole header. */}
+      <div
+        aria-hidden="true"
+        className="h-[3px] w-full bg-linear-to-r from-brand-gradient-from via-brand-teal to-brand-sky"
+      />
     </header>
   );
 }
