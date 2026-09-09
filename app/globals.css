@@ -50,6 +50,7 @@
   --color-brand-divider: #ded6c6;
   --color-brand-cream: #f1ede5;
   --color-brand-navy-light: #13496a;
+  --color-brand-teal-overlay: #1f6b73;
 }
 
 @media (prefers-color-scheme: dark) {
