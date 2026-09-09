@@ -1,31 +1,37 @@
 import type { Metadata } from "next";
 
-import BrandStrip from "./home/components/BrandStrip";
-import ContactSection from "./home/components/ContactSection";
-import GlobalReach from "./home/components/GlobalReach";
+import BusinessGroups from "./home/components/BusinessGroups";
+import CareersBanner from "./home/components/CareersBanner";
+import ContactRouting from "./home/components/ContactRouting";
+import GlobalPresence from "./home/components/GlobalPresence";
 import Hero from "./home/components/Hero";
-import InvestorCentre from "./home/components/InvestorCentre";
-import MediaInsights from "./home/components/MediaInsights";
-import Solutions from "./home/components/Solutions";
-import Testimonials from "./home/components/Testimonials";
+import HowItWorks from "./home/components/HowItWorks";
+import InvestorsPartners from "./home/components/InvestorsPartners";
+import NewsInsights from "./home/components/NewsInsights";
+import ResearchFrontiers from "./home/components/ResearchFrontiers";
+import TechnologyLayer from "./home/components/TechnologyLayer";
+import TrustGovernance from "./home/components/TrustGovernance";
 
 export const metadata: Metadata = {
-  title: "Zoiko Group | Global AI, Telecom, Fintech & Healthcare",
+  title: "Zoiko Group | Building the Intelligent Infrastructure of Everyday Life",
   description:
-    "Zoiko Group builds intelligent platforms in AI, telecom, fintech, healthcare, MedTech, food, media, and tech—driving ESG-led transformation globally.",
+    "Zoiko Group is a technology-led venture and operating group building intelligent infrastructure, trusted platforms and category-defining businesses across technology, connectivity, financial services, healthcare, mobility, commerce, media and global trade.",
 };
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <BrandStrip />
-      <Solutions />
-      <GlobalReach />
-      <InvestorCentre />
-      <MediaInsights />
-      <Testimonials />
-      <ContactSection />
+      <HowItWorks />
+      <BusinessGroups />
+      <TechnologyLayer />
+      <ResearchFrontiers />
+      <GlobalPresence />
+      <TrustGovernance />
+      <NewsInsights />
+      <InvestorsPartners />
+      <CareersBanner />
+      <ContactRouting />
     </>
   );
 }
