@@ -7,9 +7,9 @@ export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-brand-deep">
       {/* Drop the hero photo (globe/city + robotics collage) into
-          public/about2/hero-bg.jpg to replace this placeholder. */}
+          public/about/hero-bg.jpg to replace this placeholder. */}
       <Image
-        src="/about2/hero-bg.webp"
+        src="/about/hero-bg.webp"
         alt="Globe overlaid on a city skyline, with panels representing Zoiko's businesses"
         fill
         priority

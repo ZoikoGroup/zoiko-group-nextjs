@@ -7,9 +7,9 @@ export default function TechnologyLayer() {
   return (
     <section className="relative isolate overflow-hidden bg-brand-navy py-20 sm:py-24 lg:py-28">
       {/* Drop the dark tech collage image into
-          public/about2/technology-layer-bg.jpg to replace this placeholder. */}
+          public/about/technology-layer-bg.jpg to replace this placeholder. */}
       <Image
-        src="/about2/technology-layer-bg.webp"
+        src="/about/technology-layer-bg.webp"
         alt=""
         aria-hidden="true"
         fill

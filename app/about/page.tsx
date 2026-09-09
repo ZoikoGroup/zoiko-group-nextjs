@@ -1,33 +1,33 @@
 import type { Metadata } from "next";
 
-import GlobalImpact from "./components/GlobalImpact";
-import GlobalOffices from "./components/GlobalOffices";
-import Governance from "./components/Governance";
-import HistoryLegacy from "./components/HistoryLegacy";
+import BusinessGroups from "./components/BusinessGroups";
+import CapabilitiesTable from "./components/CapabilitiesTable";
+import ClosingBanner from "./components/ClosingBanner";
+import GlobalPresence from "./components/GlobalPresence";
+import Hero from "./components/Hero";
+import HowItWorks from "./components/HowItWorks";
 import Leadership from "./components/Leadership";
-import MissionVision from "./components/MissionVision";
-import Responsibility from "./components/Responsibility";
-import VisionHeader from "./components/VisionHeader";
-import WhoWeServe from "./components/WhoWeServe";
+import TechnologyLayer from "./components/TechnologyLayer";
+import TrustInfrastructure from "./components/TrustInfrastructure";
 
 export const metadata: Metadata = {
-  title: "About Us Zoiko Group | Vision & Mission for Global Impact",
+  title: "About Zoiko Group | Redefining Enterprise, Empowering Society",
   description:
-    "Discover Zoiko Group’s vision for global impact and our mission to lead with innovation, sustainability, and responsible growth across industries worldwide.",
+    "Zoiko Group Inc. is a U.S.-headquartered, technology-led multinational holding company building and operating businesses across artificial intelligence, telecommunications, financial services, healthcare, media, consumer markets and global trade.",
 };
 
 export default function AboutPage() {
   return (
     <>
-      <VisionHeader />
-      <GlobalImpact />
-      <MissionVision />
-      <WhoWeServe />
+      <Hero />
+      <HowItWorks />
+      <BusinessGroups />
+      <TechnologyLayer />
+      <CapabilitiesTable />
+      <GlobalPresence />
+      <TrustInfrastructure />
       <Leadership />
-      <Governance />
-      <GlobalOffices />
-      <Responsibility />
-      <HistoryLegacy />
+      <ClosingBanner />
     </>
   );
 }

@@ -41,7 +41,7 @@ export const businessGroups: BusinessGroup[] = [
     name: "ZoikoTech",
     description:
       "Advanced Technology & AI Platforms — enterprise software, cloud, AI, cybersecurity, communications and media infrastructure.",
-    image: "/about2/business-tech.png",
+    image: "/about/business-tech.png",
     href: "/companies",
     span: "lg:col-span-3",
     height: "h-64",
@@ -50,7 +50,7 @@ export const businessGroups: BusinessGroup[] = [
     name: "Zoiko Communications Group",
     description:
       "Community and lifestyle MVNOs, travel connectivity, wholesale telecom and carrier-grade infrastructure.",
-    image: "/about2/business-communications.png",
+    image: "/about/business-communications.png",
     href: "/companies",
     span: "lg:col-span-3",
     height: "h-64",
@@ -59,7 +59,7 @@ export const businessGroups: BusinessGroup[] = [
     name: "Financial Services & Fintech",
     description:
       "Payments, digital wallets, embedded finance and financial infrastructure.",
-    image: "/about2/business-financial.png",
+    image: "/about/business-financial.png",
     href: "/companies",
     span: "lg:col-span-2",
     height: "h-64",
@@ -67,7 +67,7 @@ export const businessGroups: BusinessGroup[] = [
   {
     name: "Zoiko Healthcare",
     description: "Pharmaceuticals, medtech, nutrition and AI-enabled digital health.",
-    image: "/about2/business-healthcare.png",
+    image: "/about/business-healthcare.png",
     href: "/companies",
     span: "lg:col-span-2",
     height: "h-64",
@@ -75,7 +75,7 @@ export const businessGroups: BusinessGroup[] = [
   {
     name: "Zoiko TV & Studios",
     description: "Purpose-led OTT, original programming and branded content.",
-    image: "/about2/business-tv.png",
+    image: "/about/business-tv.png",
     href: "/companies",
     span: "lg:col-span-2",
     height: "h-64",
@@ -83,7 +83,7 @@ export const businessGroups: BusinessGroup[] = [
   {
     name: "Consumer Brands & Food Innovation",
     description: "NoxxChicken, La Caribbean Taste and shared operating capabilities.",
-    image: "/about2/business-consumer.png",
+    image: "/about/business-consumer.png",
     href: "/companies",
     span: "lg:col-span-3",
     height: "h-64",
@@ -91,7 +91,7 @@ export const businessGroups: BusinessGroup[] = [
   {
     name: "Zoiko Supply Group",
     description: "AI-enabled global trade, sourcing and distribution infrastructure.",
-    image: "/about2/business-supply.png",
+    image: "/about/business-supply.png",
     href: "/companies",
     span: "lg:col-span-3",
     height: "h-64",
@@ -174,6 +174,6 @@ export const leadershipMembers: LeadershipMember[] = [
     name: "Lennox McLeod",
     role: "Founder & Executive Chairman",
     bio: "His professional background spans accounting, law, corporate strategy and cross-border enterprise building — a multidisciplinary foundation that continues to shape the Group's operating model: technological ambition supported by financial discipline, legal foresight and accountable execution.",
-    photo: "/about2/LennoxMcleod.webp",
+    photo: "/about/LennoxMcleod.webp",
   },
 ];

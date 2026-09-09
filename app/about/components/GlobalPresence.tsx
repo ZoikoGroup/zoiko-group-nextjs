@@ -39,7 +39,7 @@ export default function GlobalPresence() {
         <Reveal delay={150}>
           <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-card sm:h-[420px]">
             <Image
-              src="/about2/global-presence.webp"
+              src="/about/global-presence.webp"
               alt="A Zoiko team member looking out over a city skyline, with badges marking Sacramento, the United Kingdom, India and Singapore"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

@@ -6,9 +6,9 @@ export default function ClosingBanner() {
   return (
     <section className="relative isolate overflow-hidden bg-brand-deep">
       {/* Drop the skyline/globe silhouette photo into
-          public/about2/closing-banner-bg.jpg to replace this placeholder. */}
+          public/about/closing-banner-bg.jpg to replace this placeholder. */}
       <Image
-        src="/about2/closing-banner-bg.webp"
+        src="/about/closing-banner-bg.webp"
         alt=""
         aria-hidden="true"
         fill
