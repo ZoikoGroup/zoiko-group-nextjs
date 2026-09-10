@@ -1,3 +1,20 @@
+export type IndustryHighlight = {
+  title: string;
+  subtitle: string;
+};
+
+// The dark strip under the hero image.
+export const industryHighlights: IndustryHighlight[] = [
+  { title: "Technology Innovation", subtitle: "What's Next" },
+  { title: "Connectivity", subtitle: "Bringing People Closer" },
+  { title: "Financial Services", subtitle: "Enabling Opportunities" },
+  { title: "Healthcare", subtitle: "Healthier Communities" },
+  { title: "Mobility", subtitle: "Moving Lives Forward" },
+  { title: "Real Estate", subtitle: "Better Living Spaces" },
+  { title: "Commerce & Media", subtitle: "Bringing People Together" },
+  { title: "Sustainability", subtitle: "A Greener Tomorrow" },
+];
+
 export type SystemPillar = {
   label: string;
   title: string;
