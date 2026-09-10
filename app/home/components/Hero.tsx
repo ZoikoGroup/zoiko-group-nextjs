@@ -17,7 +17,7 @@ export default function Hero() {
         className="object-cover object-right"
       />
 
-      <div className="absolute inset-0 bg-linear-to-r from-brand-deep/90 via-brand-deep/50 to-transparent" />
+      <div />
 
       <div className="relative mx-auto w-full max-w-7xl px-6 pt-20 pb-16 sm:px-8 sm:pt-24 sm:pb-20 lg:pt-28 lg:pb-24">
         <Reveal>
