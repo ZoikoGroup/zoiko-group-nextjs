@@ -12,6 +12,9 @@
   --font-serif: var(--font-newsreader);
   --font-highlight: var(--font-inter);
   --font-display: var(--font-space-grotesk);
+  --font-archivo: var(--font-archivo);
+  --font-libre-franklin: var(--font-libre-franklin);
+  --font-jetbrains-mono: var(--font-jetbrains-mono);
 }
 
 /* Zoiko Group brand palette */
@@ -58,6 +61,7 @@
   --color-brand-utility-bg: #f1f1ef;
   --color-brand-utility-text: #4a4a48;
   --color-brand-item-heading: #124869;
+  --color-brand-note: #a9c0cc;
 }
 
 @media (prefers-color-scheme: dark) {

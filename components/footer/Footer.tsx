@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import zoikoGroupLogo from "@/public/zoiko-group-logo.png";
+import zoikoGroupLogo from "@/public/logo-new.png";
 import { ArrowRightIcon, SunriseIcon } from "./footer-icons";
 import {
   contactCtaLinks,
@@ -79,14 +79,14 @@ export default function Footer() {
             <Image
               src={zoikoGroupLogo}
               alt="Zoiko Group"
-              className="h-9 w-auto"
+              className="h-20 w-auto"
             />
-            <p className="mt-4 text-sm leading-relaxed text-brand-muted">
+            <p className="mt-6 text-sm leading-relaxed text-brand-muted">
               A global group building smarter businesses for a more
               connected, sustainable and inclusive tomorrow
             </p>
 
-            <ul className="mt-5 flex items-center gap-3">
+            <ul className="mt-8 flex items-center gap-3">
               {socialLinks.map((social) => (
                 <li key={social.label}>
                   <a
@@ -102,7 +102,7 @@ export default function Footer() {
               ))}
             </ul>
 
-            <div className="mt-8 space-y-6">
+            <div className="mt-10 space-y-6">
               {headquarters.map((hq) => (
                 <div key={hq.label}>
                   <p className="text-xs font-bold tracking-wide text-brand-heading uppercase">
@@ -118,6 +118,23 @@ export default function Footer() {
                 </div>
               ))}
             </div>
+
+            {/* Drop the world map graphic into public/footer/world-map.png. */}
+            <div className="relative mt-10 h-48 w-full">
+              <Image
+                src="/footer/world-map.png"
+                alt="Map showing Zoiko Group's global presence"
+                fill
+                sizes="280px"
+                className="object-contain object-left"
+              />
+            </div>
+            <p className="font-libre-franklin mt-6 text-[16px] leading-[30px] font-medium text-brand-item-heading">
+              Operating across the globe.
+              <br />
+              <span className="underline">Creating</span> opportunities
+              everywhere.
+            </p>
           </div>
 
           <div className="space-y-10">
@@ -137,7 +154,7 @@ export default function Footer() {
                 <div className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
                   {row.map((column) => (
                     <div key={column.heading}>
-                      <h3 className="text-xs font-bold tracking-wide text-brand-heading uppercase">
+                      <h3 className="font-display text-[16px] leading-[20.8px] font-bold tracking-[0.26px] text-brand-item-heading uppercase">
                         {column.heading}
                       </h3>
                       <ul className="mt-4 space-y-3">
@@ -145,7 +162,7 @@ export default function Footer() {
                           <li key={link.label}>
                             <Link
                               href={link.href}
-                              className="text-sm text-brand-muted transition-colors hover:text-brand-teal"
+                              className="font-highlight block text-[16px] leading-[23.2px] font-normal text-brand-item-heading/60 transition-colors hover:text-brand-teal"
                             >
                               {link.label}
                             </Link>
@@ -164,7 +181,7 @@ export default function Footer() {
 
         {/* Contact & support */}
         <div className="py-8 text-center">
-          <p className="text-xs font-bold tracking-wide text-brand-heading uppercase">
+          <p className="font-jetbrains-mono text-[16px] leading-[11.8px] font-medium tracking-[1.37px] text-brand-item-heading uppercase">
             Contact &amp; Support
           </p>
           <ul className="mt-4 flex flex-wrap items-center justify-center divide-x divide-brand-border">
@@ -172,7 +189,7 @@ export default function Footer() {
               <li key={link.label} className="px-4">
                 <Link
                   href={link.href}
-                  className="text-sm text-brand-muted transition-colors hover:text-brand-teal"
+                  className="font-archivo text-[13.5px] leading-[21.6px] font-normal text-brand-note transition-colors hover:text-brand-teal"
                 >
                   {link.label}
                 </Link>
@@ -188,7 +205,7 @@ export default function Footer() {
               <li key={link.label} className="px-4">
                 <Link
                   href={link.href}
-                  className="text-sm text-brand-muted transition-colors hover:text-brand-teal"
+                  className="font-archivo text-[13.5px] leading-[21.6px] font-normal text-brand-note transition-colors hover:text-brand-teal"
                 >
                   {link.label}
                 </Link>
