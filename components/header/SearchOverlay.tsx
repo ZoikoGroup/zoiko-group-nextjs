@@ -3,9 +3,14 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
+import { SearchIcon } from "./mega-menu-icons";
 import { searchIndex } from "./search-index";
 
-export default function SearchOverlay() {
+export default function SearchOverlay({
+  className = "",
+}: {
+  className?: string;
+}) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -43,22 +48,10 @@ export default function SearchOverlay() {
         onClick={() => setOpen((value) => !value)}
         aria-label={open ? "Close search" : "Search"}
         aria-expanded={open}
-        className="text-brand-ink transition-colors hover:text-brand-teal"
+        className={className || "text-brand-ink transition-colors hover:text-brand-teal"}
       >
-        <svg
-          width="19"
-          height="19"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-        >
-          <circle cx="11" cy="11" r="7" />
-          <path d="m21 21-4.3-4.3" />
-        </svg>
+        <SearchIcon className="h-4 w-4" />
+        Search
       </button>
 
       {open && (

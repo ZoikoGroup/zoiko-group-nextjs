@@ -11,6 +11,7 @@
   --font-sans: var(--font-open-sans);
   --font-serif: var(--font-newsreader);
   --font-highlight: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
 }
 
 /* Zoiko Group brand palette */
@@ -53,6 +54,10 @@
   --color-brand-cream: #f1ede5;
   --color-brand-navy-light: #13496a;
   --color-brand-teal-overlay: #1f6b73;
+  --color-brand-heading: #1a2e35;
+  --color-brand-utility-bg: #f1f1ef;
+  --color-brand-utility-text: #4a4a48;
+  --color-brand-item-heading: #124869;
 }
 
 @media (prefers-color-scheme: dark) {
