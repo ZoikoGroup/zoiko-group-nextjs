@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
-import zoikoGroupLogo from "@/public/zoiko-group-logo.png";
+import zoikoGroupLogo from "@/public/logo-new.png";
 import MegaMenuPanel from "./MegaMenuPanel";
 import { megaMenuItems } from "./mega-menu-data";
 import { contactItem } from "./nav-items";

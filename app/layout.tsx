@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Newsreader, Open_Sans, Space_Grotesk } from "next/font/google";
+import {
+  Archivo,
+  Inter,
+  JetBrains_Mono,
+  Libre_Franklin,
+  Newsreader,
+  Open_Sans,
+  Space_Grotesk,
+} from "next/font/google";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import "./globals.css";
@@ -24,6 +32,21 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
+const archivo = Archivo({
+  variable: "--font-archivo",
+  subsets: ["latin"],
+});
+
+const libreFranklin = Libre_Franklin({
+  variable: "--font-libre-franklin",
+  subsets: ["latin"],
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Zoiko Group",
   description:
@@ -34,7 +57,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${openSans.variable} ${newsreader.variable} ${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className={`${openSans.variable} ${newsreader.variable} ${inter.variable} ${spaceGrotesk.variable} ${archivo.variable} ${libreFranklin.variable} ${jetBrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Header />
