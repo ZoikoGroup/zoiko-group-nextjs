@@ -162,10 +162,16 @@ export default function Header() {
               ? "visible translate-y-0 opacity-100"
               : "invisible -translate-y-1 opacity-0"
           }`}
-          onMouseEnter={() => activeItem && openNow(activeItem.label)}
-          onMouseLeave={closeSoon}
         >
-          <div className="mx-6 w-full max-w-7xl overflow-hidden rounded-3xl border border-brand-border bg-white shadow-xl">
+          {/* Hover tracking is on this visible card, not the full-width
+              wrapper above — otherwise moving the cursor into the empty
+              space beside the card still counts as "inside" and the menu
+              never closes. */}
+          <div
+            className="mx-6 w-full max-w-7xl overflow-hidden rounded-3xl border border-brand-border bg-white shadow-xl"
+            onMouseEnter={() => activeItem && openNow(activeItem.label)}
+            onMouseLeave={closeSoon}
+          >
             {activeItem && (
               <MegaMenuPanel item={activeItem} onNavigate={closeNow} />
             )}
