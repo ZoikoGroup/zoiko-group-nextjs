@@ -51,6 +51,9 @@ export const metadata: Metadata = {
   title: "Zoiko Group",
   description:
     "Zoiko Group — a global family of companies across technology, telecommunications, mobility, media and consumer brands.",
+  verification: {
+    google: "Bnat4EdTXzEe798DpfhnfiCP-z9vJwo6iwX-bO4R7EU",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
